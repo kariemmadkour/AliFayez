@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">حزب الناس — لكل المصريين</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+<!-- ═══ SVG SPRITE ═══ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+
+  <!-- PLACEHOLDER LOGO MARK: replace with official party logo art (swap this symbol's contents, or replace the <use> tags below with <img src="logo.svg">) -->
+  <symbol id="brand-mark" viewBox="0 0 64 64">
+    <circle cx="32" cy="32" r="30" fill="#0d1b4c" stroke="#c9a827" stroke-width="2.5"/>
+    <path d="M32 16c0 8-6 12-14 13 8 1 14 5 14 13 0-8 6-12 14-13-8-1-14-5-14-13z" fill="#c9a827"/>
+    <circle cx="32" cy="29" r="2.5" fill="#0d1b4c"/>
+  </symbol>
+
+  <symbol id="ico-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+  </symbol>
+  <symbol id="ico-people" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+  </symbol>
+  <symbol id="ico-handshake" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11 17l-1.5 1.5a2.12 2.12 0 0 1-3-3L9 13"/>
+    <path d="M14 14l3-3 5 5-3 3"/><path d="M6 10l4-4a3 3 0 0 1 4 0l1 1"/>
+    <path d="M9 13l5 5"/>
+  </symbol>
+  <symbol id="ico-flag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+  </symbol>
+  <symbol id="ico-megaphone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 11v3a1 1 0 0 0 1 1h2l3.5 5V5L6 10H4a1 1 0 0 0-1 1z"/>
+    <path d="M14 8a3 3 0 0 1 0 8"/><path d="M17 5a7 7 0 0 1 0 14"/>
+  </symbol>
+  <symbol id="ico-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M20 6L9 17l-5-5"/>
+  </symbol>
+  <symbol id="ico-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+  </symbol>
+  <symbol id="ico-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M3 8h10M9 4l4 4-4 4"/>
+  </symbol>
+</svg>
+
+<!-- ═══ LOADER ═══ -->
+<div class="loader" id="loader">
+  <div class="loader__content">
+    <div class="loader__logo"><svg viewBox="0 0 64 64"><use href="#brand-mark"/></svg></div>
+    <div class="loader__name">
+      <span class="loader__brand" data-i18n="brand.name">حزب الناس</span>
+      <span class="loader__slogan" data-i18n="brand.slogan">لكل المصريين</span>
+    </div>
+    <div class="loader__bar-wrap"><div class="loader__bar"></div></div>
+    <p class="loader__tagline" data-i18n="loader.tagline">جاري تجهيز الموقع</p>
+  </div>
+</div>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav" id="navbar">
+  <a href="#" class="brand-logo" aria-label="Hezb El Nas">
+    <svg viewBox="0 0 64 64" aria-hidden="true"><use href="#brand-mark"/></svg>
+    <div class="brand-logo__text">
+      <span class="brand-logo__name" data-i18n="brand.name">حزب الناس</span>
+      <span class="brand-logo__slogan" data-i18n="brand.slogan">لكل المصريين</span>
+    </div>
+  </a>
+
+  <ul class="nav__links">
+    <li><a href="#party" data-i18n="nav.party">عن الحزب</a></li>
+    <li><a href="#fayez" data-i18n="nav.fayez">علي فايز</a></li>
+    <li><a href="#initiatives" data-i18n="nav.initiatives">المبادرات</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">تواصل معنا</a></li>
+  </ul>
+
+  <div class="nav__right">
+    <a href="https://www.facebook.com/share/18TyR4LaDF/?mibextid=wwXIfr" target="_blank" rel="noopener" class="btn btn--outline" data-i18n="nav.cta">تابعنا</a>
+    <div class="lang-pill" role="group" aria-label="Language">
+      <button class="lang-pill__btn" data-lang="en">EN</button>
+      <button class="lang-pill__btn" data-lang="ar">AR</button>
+    </div>
+    <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ MOBILE NAV ═══ -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#party" data-i18n="nav.party">عن الحزب</a>
+  <a href="#fayez" data-i18n="nav.fayez">علي فايز</a>
+  <a href="#initiatives" data-i18n="nav.initiatives">المبادرات</a>
+  <a href="#contact" data-i18n="nav.contact">تواصل معنا</a>
+  <a href="https://www.facebook.com/share/18TyR4LaDF/?mibextid=wwXIfr" target="_blank" rel="noopener" class="btn btn--primary" data-i18n="nav.cta">تابعنا</a>
+  <div class="lang-pill">
+    <button class="lang-pill__btn" data-lang="en">EN</button>
+    <button class="lang-pill__btn" data-lang="ar">AR</button>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero" id="hero">
+  <p class="hero__eyebrow reveal-hero" style="--d:.1s" data-i18n="hero.eyebrow">لكل المصريين</p>
+  <h1 class="hero__title">
+    <span class="hero__title-line reveal-hero" style="--d:.25s" data-i18n="hero.title1">حزب</span>
+    <span class="hero__title-line reveal-hero" style="--d:.4s"><em data-i18n="hero.title2">الناس</em></span>
+  </h1>
+  <p class="hero__sub reveal-hero" style="--d:.55s" data-i18n="hero.sub">صوت ليك، مش عليك</p>
+  <div class="hero__actions reveal-hero" style="--d:.7s">
+    <a href="#party" class="btn btn--primary btn--lg">
+      <span data-i18n="hero.cta1">اعرف أكتر</span>
+      <svg width="16" height="16" aria-hidden="true"><use href="#ico-arrow"/></svg>
+    </a>
+    <a href="https://www.facebook.com/share/18TyR4LaDF/?mibextid=wwXIfr" target="_blank" rel="noopener" class="btn btn--ghost btn--lg" data-i18n="hero.cta2">تابعنا على فيسبوك</a>
+  </div>
+
+  <div class="hero__values reveal-hero" style="--d:.9s">
+    <div class="hero__value"><svg><use href="#ico-people"/></svg><span data-i18n="hero.val1">الوحدة</span></div>
+    <div class="hero__value"><svg><use href="#ico-shield"/></svg><span data-i18n="hero.val2">الشفافية</span></div>
+    <div class="hero__value"><svg><use href="#ico-handshake"/></svg><span data-i18n="hero.val3">المشاركة</span></div>
+  </div>
+</header>
+
+<!-- ═══ MARQUEE ═══ -->
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span data-i18n="brand.name">حزب الناس</span><i>•</i>
+    <span data-i18n="brand.slogan">لكل المصريين</span><i>•</i>
+    <span data-i18n="brand.tagline">صوت ليك، مش عليك</span><i>•</i>
+    <span data-i18n="brand.name">حزب الناس</span><i>•</i>
+    <span data-i18n="brand.slogan">لكل المصريين</span><i>•</i>
+    <span data-i18n="brand.tagline">صوت ليك، مش عليك</span><i>•</i>
+    <span data-i18n="brand.name">حزب الناس</span><i>•</i>
+    <span data-i18n="brand.slogan">لكل المصريين</span><i>•</i>
+    <span data-i18n="brand.tagline">صوت ليك، مش عليك</span><i>•</i>
+  </div>
+</div>
+
+<!-- ═══ ABOUT THE PARTY ═══ -->
+<!-- DRAFT COPY: generic placeholder mission/values language — review before publishing -->
+<section class="section" id="party">
+  <div class="party reveal">
+    <div class="party__visual">
+      <svg viewBox="0 0 64 64"><use href="#brand-mark"/></svg>
+    </div>
+    <div class="party__text">
+      <span class="section__eyebrow" data-i18n="party.eyebrow">مين إحنا</span>
+      <h2 class="section__title" data-i18n-html="party.title">عن <em>الحزب</em></h2>
+      <p data-i18n="party.p1">حزب الناس بيؤمن بفكرة بسيطة...</p>
+      <p data-i18n="party.p2">أبوابنا مفتوحة لكل المصريين...</p>
+    </div>
+  </div>
+
+  <div class="value-grid reveal">
+    <div class="value-card">
+      <svg><use href="#ico-shield"/></svg>
+      <h3 data-i18n="party.val1.title">النزاهة</h3>
+      <p data-i18n="party.val1.body">قيادة مسؤولة...</p>
+    </div>
+    <div class="value-card">
+      <svg><use href="#ico-people"/></svg>
+      <h3 data-i18n="party.val2.title">الوحدة</h3>
+      <p data-i18n="party.val2.body">بنجمع المصريين...</p>
+    </div>
+    <div class="value-card">
+      <svg><use href="#ico-handshake"/></svg>
+      <h3 data-i18n="party.val3.title">الخدمة</h3>
+      <p data-i18n="party.val3.body">مبادرات مجتمعية...</p>
+    </div>
+    <div class="value-card">
+      <svg><use href="#ico-flag"/></svg>
+      <h3 data-i18n="party.val4.title">الوطن</h3>
+      <p data-i18n="party.val4.body">التزام مشترك...</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ALI FAYEZ ═══ -->
+<section class="section section--alt" id="fayez">
+  <div class="section__header reveal">
+    <span class="section__eyebrow" data-i18n="fayez.eyebrow">مدير الصفحة والإعلام</span>
+    <h2 class="section__title" data-i18n-html="fayez.title">علي <em>فايز</em></h2>
+  </div>
+
+  <div class="fayez-card reveal">
+    <span class="fayez-card__badge" data-i18n="fayez.badge">مسودة — يرجى الاستبدال ببيانات موثقة</span>
+    <div class="fayez-card__avatar">AF</div>
+    <div class="fayez-card__body">
+      <span class="fayez-card__role" data-i18n="fayez.role">مدير الصفحة والإعلام، حزب الناس</span>
+      <h3 class="fayez-card__name" data-i18n-html="fayez.title">علي <em>فايز</em></h3>
+      <div class="fayez-card__bio">
+        <p data-i18n="fayez.bio1">[أضف نبذة عن الخلفية والمسيرة هنا]</p>
+        <p data-i18n="fayez.bio2">[أضف التركيز الإعلامي والمجتمعي هنا]</p>
+      </div>
+      <h4 class="fayez-card__ach-title" data-i18n="fayez.achTitle">أبرز المحطات</h4>
+      <ul class="fayez-card__ach">
+        <li data-i18n="fayez.ach1">[أضف إنجازًا هنا]</li>
+        <li data-i18n="fayez.ach2">[أضف إنجازًا هنا]</li>
+        <li data-i18n="fayez.ach3">[أضف تكريمًا أو محطة مهمة هنا]</li>
+      </ul>
+    </div>
+    <p class="fayez-card__note" data-i18n="fayez.note">هذا القسم مسودة مؤقتة...</p>
+  </div>
+</section>
+
+<!-- ═══ INITIATIVES ═══ -->
+<!-- DRAFT COPY: generic placeholder mission/values language — review before publishing -->
+<section class="section" id="initiatives">
+  <div class="section__header reveal">
+    <span class="section__eyebrow" data-i18n="init.eyebrow">إيه اللي بنعمله</span>
+    <h2 class="section__title" data-i18n-html="init.title">مبادراتنا</h2>
+    <p class="section__sub" data-i18n="init.sub">برامج مستمرة بتربط الحزب بالمجتمعات...</p>
+  </div>
+
+  <div class="init-grid reveal">
+    <div class="init-card">
+      <svg><use href="#ico-people"/></svg>
+      <h3 data-i18n="init.init1.title">التواصل المجتمعي</h3>
+      <p data-i18n="init.init1.body">تواجد ميداني في الأحياء والمحافظات...</p>
+    </div>
+    <div class="init-card">
+      <svg><use href="#ico-handshake"/></svg>
+      <h3 data-i18n="init.init2.title">العضوية والتطوع</h3>
+      <p data-i18n="init.init2.body">فرص للمواطنين للانضمام...</p>
+    </div>
+    <div class="init-card">
+      <svg><use href="#ico-megaphone"/></svg>
+      <h3 data-i18n="init.init3.title">الإعلام والتواجد العام</h3>
+      <p data-i18n="init.init3.body">إبقاء الجمهور على اطلاع...</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section class="section section--alt" id="contact">
+  <div class="section__header reveal">
+    <span class="section__eyebrow" data-i18n="contact.eyebrow">تواصل معنا</span>
+    <h2 class="section__title" data-i18n-html="contact.title">التواصل <em>والمتابعة</em></h2>
+    <p class="section__sub" data-i18n="contact.sub">للاستفسارات الرسمية...</p>
+  </div>
+
+  <div class="contact-grid reveal">
+    <a href="https://www.facebook.com/share/18TyR4LaDF/?mibextid=wwXIfr" target="_blank" rel="noopener" class="contact-card">
+      <svg><use href="#ico-facebook"/></svg>
+      <div>
+        <h3 data-i18n="contact.fbParty">الصفحة الرسمية على فيسبوك</h3>
+        <p data-i18n="contact.fbPartySub">حزب الناس — أخبار وإعلانات</p>
+      </div>
+      <span class="contact-card__arrow" data-i18n="contact.linkLabel">زيارة</span>
+    </a>
+    <a href="https://www.facebook.com/alifayez82" target="_blank" rel="noopener" class="contact-card">
+      <svg><use href="#ico-facebook"/></svg>
+      <div>
+        <h3 data-i18n="contact.fbFayez">علي فايز</h3>
+        <p data-i18n="contact.fbFayezSub">مدير الصفحة والإعلام</p>
+      </div>
+      <span class="contact-card__arrow" data-i18n="contact.linkLabel">زيارة</span>
+    </a>
+  </div>
+  <p class="contact-note" data-i18n="contact.sub">للاستفسارات الرسمية...</p>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer__top">
+    <div>
+      <div class="footer__brand">
+        <svg viewBox="0 0 64 64"><use href="#brand-mark"/></svg>
+        <span class="footer__brand-name" data-i18n="brand.name">حزب الناس</span>
+      </div>
+      <p class="footer__tagline" data-i18n="footer.tagline">صوت ليك، مش عليك.</p>
+    </div>
+    <div class="footer__col">
+      <h4 data-i18n="footer.col1">استكشف</h4>
+      <ul>
+        <li><a href="#party" data-i18n="nav.party">عن الحزب</a></li>
+        <li><a href="#fayez" data-i18n="nav.fayez">علي فايز</a></li>
+        <li><a href="#initiatives" data-i18n="nav.initiatives">المبادرات</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <h4 data-i18n="footer.col2">تابعنا</h4>
+      <ul>
+        <li><a href="https://www.facebook.com/share/18TyR4LaDF/?mibextid=wwXIfr" target="_blank" rel="noopener" data-i18n="contact.fbParty">الصفحة الرسمية على فيسبوك</a></li>
+        <li><a href="https://www.facebook.com/alifayez82" target="_blank" rel="noopener" data-i18n="contact.fbFayez">علي فايز</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p data-i18n="footer.copy">© 2026 حزب الناس. جميع الحقوق محفوظة.</p>
+    <p data-i18n="footer.built">هذا موقع مؤقت في انتظار المحتوى الرسمي للحزب.</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
