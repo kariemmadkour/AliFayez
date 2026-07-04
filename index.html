@@ -49,6 +49,12 @@
   <symbol id="ico-arrow" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
     <path d="M3 8h10M9 4l4 4-4 4"/>
   </symbol>
+  <symbol id="ico-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.88 12a19.79 19.79 0 0 1-3-8.63A2 2 0 0 1 4 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9a16 16 0 0 0 6.29 6.29l1.88-1.88a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+  </symbol>
+  <symbol id="ico-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+  </symbol>
 </svg>
 
 <!-- ═══ LOADER ═══ -->
@@ -113,6 +119,7 @@
     <span class="hero__title-line reveal-hero" style="--d:.25s" data-i18n="hero.title1">حزب</span>
     <span class="hero__title-line reveal-hero" style="--d:.4s"><em data-i18n="hero.title2">الناس</em></span>
   </h1>
+  <span class="hero__status reveal-hero" style="--d:.45s" data-i18n="hero.status">تحت التأسيس</span>
   <p class="hero__sub reveal-hero" style="--d:.55s" data-i18n="hero.sub">صوت ليك، مش عليك</p>
   <div class="hero__actions reveal-hero" style="--d:.7s">
     <a href="#party" class="btn btn--primary btn--lg">
@@ -123,9 +130,21 @@
   </div>
 
   <div class="hero__values reveal-hero" style="--d:.9s">
-    <div class="hero__value"><svg><use href="#ico-people"/></svg><span data-i18n="hero.val1">الوحدة</span></div>
-    <div class="hero__value"><svg><use href="#ico-shield"/></svg><span data-i18n="hero.val2">الشفافية</span></div>
-    <div class="hero__value"><svg><use href="#ico-handshake"/></svg><span data-i18n="hero.val3">المشاركة</span></div>
+    <div class="hero__value">
+      <svg><use href="#ico-people"/></svg>
+      <strong data-i18n="hero.stat1Num">+500</strong>
+      <span data-i18n="hero.stat1Label">عضو مؤسس</span>
+    </div>
+    <div class="hero__value">
+      <svg><use href="#ico-shield"/></svg>
+      <strong data-i18n="hero.stat2Num">9.2K</strong>
+      <span data-i18n="hero.stat2Label">متابع على فيسبوك</span>
+    </div>
+    <div class="hero__value">
+      <svg><use href="#ico-handshake"/></svg>
+      <strong data-i18n="hero.stat3Num">+9</strong>
+      <span data-i18n="hero.stat3Label">محافظات وفي ازدياد</span>
+    </div>
   </div>
 </header>
 
@@ -145,7 +164,7 @@
 </div>
 
 <!-- ═══ ABOUT THE PARTY ═══ -->
-<!-- DRAFT COPY: generic placeholder mission/values language — review before publishing -->
+<!-- Copy sourced from the party's official Facebook founding-conference statement -->
 <section class="section" id="party">
   <div class="party reveal">
     <div class="party__visual">
@@ -154,31 +173,31 @@
     <div class="party__text">
       <span class="section__eyebrow" data-i18n="party.eyebrow">مين إحنا</span>
       <h2 class="section__title" data-i18n-html="party.title">عن <em>الحزب</em></h2>
-      <p data-i18n="party.p1">حزب الناس بيؤمن بفكرة بسيطة...</p>
-      <p data-i18n="party.p2">أبوابنا مفتوحة لكل المصريين...</p>
+      <p data-i18n="party.p1">شهد حزب الناس انطلاقةً حقيقية لمسيرته بعقد المؤتمر الأول للهيئة التأسيسية...</p>
+      <p data-i18n="party.p2">ضمّ المؤتمر نخبةً من القيادات الإعلامية والصحفية...</p>
     </div>
   </div>
 
   <div class="value-grid reveal">
     <div class="value-card">
-      <svg><use href="#ico-shield"/></svg>
-      <h3 data-i18n="party.val1.title">النزاهة</h3>
-      <p data-i18n="party.val1.body">قيادة مسؤولة...</p>
-    </div>
-    <div class="value-card">
       <svg><use href="#ico-people"/></svg>
-      <h3 data-i18n="party.val2.title">الوحدة</h3>
-      <p data-i18n="party.val2.body">بنجمع المصريين...</p>
+      <h3 data-i18n="party.val1.title">المشاركة الوطنية</h3>
+      <p data-i18n="party.val1.body">بيت سياسي لكل مصري...</p>
     </div>
     <div class="value-card">
-      <svg><use href="#ico-handshake"/></svg>
-      <h3 data-i18n="party.val3.title">الخدمة</h3>
-      <p data-i18n="party.val3.body">مبادرات مجتمعية...</p>
+      <svg><use href="#ico-shield"/></svg>
+      <h3 data-i18n="party.val2.title">احترام الدستور والقانون</h3>
+      <p data-i18n="party.val2.body">عمل سياسي قائم على احترام الدستور والقانون.</p>
+    </div>
+    <div class="value-card">
+      <svg><use href="#ico-check"/></svg>
+      <h3 data-i18n="party.val3.title">الكفاءة والشفافية</h3>
+      <p data-i18n="party.val3.body">قيادة مسؤولة قائمة على الكفاءة والشفافية.</p>
     </div>
     <div class="value-card">
       <svg><use href="#ico-flag"/></svg>
-      <h3 data-i18n="party.val4.title">الوطن</h3>
-      <p data-i18n="party.val4.body">التزام مشترك...</p>
+      <h3 data-i18n="party.val4.title">خدمة الوطن والمواطن</h3>
+      <p data-i18n="party.val4.body">عمل جاد ومستمر لخدمة الوطن والمواطن.</p>
     </div>
   </div>
 </section>
@@ -186,56 +205,72 @@
 <!-- ═══ ALI FAYEZ ═══ -->
 <section class="section section--alt" id="fayez">
   <div class="section__header reveal">
-    <span class="section__eyebrow" data-i18n="fayez.eyebrow">مدير الصفحة والإعلام</span>
-    <h2 class="section__title" data-i18n-html="fayez.title">علي <em>فايز</em></h2>
+    <span class="section__eyebrow" data-i18n="fayez.eyebrow">وكيل المؤسسين</span>
+    <h2 class="section__title" data-i18n-html="fayez.title">علي فايز <em>الفرجاني</em></h2>
   </div>
 
   <div class="fayez-card reveal">
-    <span class="fayez-card__badge" data-i18n="fayez.badge">مسودة — يرجى الاستبدال ببيانات موثقة</span>
     <div class="fayez-card__avatar">AF</div>
     <div class="fayez-card__body">
-      <span class="fayez-card__role" data-i18n="fayez.role">مدير الصفحة والإعلام، حزب الناس</span>
-      <h3 class="fayez-card__name" data-i18n-html="fayez.title">علي <em>فايز</em></h3>
+      <span class="fayez-card__role" data-i18n="fayez.role">وكيل المؤسسين، حزب الناس</span>
+      <h3 class="fayez-card__name" data-i18n-html="fayez.title">علي فايز <em>الفرجاني</em></h3>
       <div class="fayez-card__bio">
-        <p data-i18n="fayez.bio1">[أضف نبذة عن الخلفية والمسيرة هنا]</p>
-        <p data-i18n="fayez.bio2">[أضف التركيز الإعلامي والمجتمعي هنا]</p>
+        <p data-i18n="fayez.bio1">المستشار علي فايز الفرجاني محامٍ بالاستئناف العالي...</p>
+        <p data-i18n="fayez.bio2">كما يشغل منصب رئيس مؤسسة علي فايز الخيرية...</p>
       </div>
       <h4 class="fayez-card__ach-title" data-i18n="fayez.achTitle">أبرز المحطات</h4>
       <ul class="fayez-card__ach">
-        <li data-i18n="fayez.ach1">[أضف إنجازًا هنا]</li>
-        <li data-i18n="fayez.ach2">[أضف إنجازًا هنا]</li>
-        <li data-i18n="fayez.ach3">[أضف تكريمًا أو محطة مهمة هنا]</li>
+        <li data-i18n="fayez.ach1">محامٍ بالاستئناف العالي وباحث دكتوراة في القانون</li>
+        <li data-i18n="fayez.ach2">مقدّم برامج على قناتي الشمس والمحور</li>
+        <li data-i18n="fayez.ach3">رئيس مؤسسة علي فايز الخيرية</li>
+        <li data-i18n="fayez.ach4">وكيل المؤسسين — قاد المؤتمر الأول لتأسيس حزب الناس</li>
       </ul>
     </div>
-    <p class="fayez-card__note" data-i18n="fayez.note">هذا القسم مسودة مؤقتة...</p>
+    <p class="fayez-card__note" data-i18n="fayez.note">السيرة الذاتية منقولة عن الصفحة الرسمية لعلي فايز على فيسبوك.</p>
   </div>
 </section>
 
 <!-- ═══ INITIATIVES ═══ -->
-<!-- DRAFT COPY: generic placeholder mission/values language — review before publishing -->
+<!-- Copy sourced from the party's official Facebook announcement of the Services Card initiative -->
 <section class="section" id="initiatives">
   <div class="section__header reveal">
-    <span class="section__eyebrow" data-i18n="init.eyebrow">إيه اللي بنعمله</span>
-    <h2 class="section__title" data-i18n-html="init.title">مبادراتنا</h2>
-    <p class="section__sub" data-i18n="init.sub">برامج مستمرة بتربط الحزب بالمجتمعات...</p>
+    <span class="section__eyebrow" data-i18n="init.eyebrow">مبادرة رسمية</span>
+    <h2 class="section__title" data-i18n-html="init.title">منظومة <em>كارت الخدمات</em></h2>
+    <p class="section__sub" data-i18n="init.sub">منظومة عضوية إلكترونية أعلن عنها الحزب...</p>
+    <p class="section__quote" data-i18n="init.quote">— كما أعلن المستشار علي فايز الفرجاني، وكيل مؤسسي حزب الناس.</p>
   </div>
 
   <div class="init-grid reveal">
-    <div class="init-card">
+    <div class="init-card init-card--tier">
+      <svg><use href="#ico-shield"/></svg>
+      <h3 data-i18n="init.tier1.title">بطاقة VIP</h3>
+      <span class="init-card__sub" data-i18n="init.tier1.sub">الأعضاء المؤسسين</span>
+      <p data-i18n="init.tier1.body">استفادة كاملة 100% من شبكة الخدمات.</p>
+    </div>
+    <div class="init-card init-card--tier">
       <svg><use href="#ico-people"/></svg>
-      <h3 data-i18n="init.init1.title">التواصل المجتمعي</h3>
-      <p data-i18n="init.init1.body">تواجد ميداني في الأحياء والمحافظات...</p>
+      <h3 data-i18n="init.tier2.title">بطاقة B</h3>
+      <span class="init-card__sub" data-i18n="init.tier2.sub">الأعضاء المشاركين</span>
+      <p data-i18n="init.tier2.body">استفادة بنسبة 75% من شبكة الخدمات.</p>
     </div>
-    <div class="init-card">
+    <div class="init-card init-card--tier">
       <svg><use href="#ico-handshake"/></svg>
-      <h3 data-i18n="init.init2.title">العضوية والتطوع</h3>
-      <p data-i18n="init.init2.body">فرص للمواطنين للانضمام...</p>
+      <h3 data-i18n="init.tier3.title">بطاقة C</h3>
+      <span class="init-card__sub" data-i18n="init.tier3.sub">الأعضاء المنتسبين</span>
+      <p data-i18n="init.tier3.body">استفادة بنسبة 50% من شبكة الخدمات.</p>
     </div>
-    <div class="init-card">
-      <svg><use href="#ico-megaphone"/></svg>
-      <h3 data-i18n="init.init3.title">الإعلام والتواجد العام</h3>
-      <p data-i18n="init.init3.body">إبقاء الجمهور على اطلاع...</p>
-    </div>
+  </div>
+
+  <h4 class="benefits__title reveal" data-i18n="init.benefitsTitle">مجالات الخدمة</h4>
+  <div class="benefit-grid reveal">
+    <div class="benefit-item"><svg><use href="#ico-check"/></svg><span data-i18n="init.benefit1">المستشفيات الخاصة — الكشف والعمليات</span></div>
+    <div class="benefit-item"><svg><use href="#ico-check"/></svg><span data-i18n="init.benefit2">معامل التحاليل والأشعة</span></div>
+    <div class="benefit-item"><svg><use href="#ico-check"/></svg><span data-i18n="init.benefit3">أطباء متعاقدون بمختلف التخصصات</span></div>
+    <div class="benefit-item"><svg><use href="#ico-check"/></svg><span data-i18n="init.benefit4">المطاعم والماركت والهايبر ماركت</span></div>
+    <div class="benefit-item"><svg><use href="#ico-check"/></svg><span data-i18n="init.benefit5">محلات الملابس والاحتياجات الأساسية</span></div>
+    <div class="benefit-item"><svg><use href="#ico-check"/></svg><span data-i18n="init.benefit6">الأندية الاجتماعية والرياضية</span></div>
+    <div class="benefit-item"><svg><use href="#ico-check"/></svg><span data-i18n="init.benefit7">المصايف والرحلات والخدمات الترفيهية</span></div>
+    <div class="benefit-item"><svg><use href="#ico-check"/></svg><span data-i18n="init.benefit8">دعم مواصلات الطلبة</span></div>
   </div>
 </section>
 
@@ -260,10 +295,24 @@
       <svg><use href="#ico-facebook"/></svg>
       <div>
         <h3 data-i18n="contact.fbFayez">علي فايز</h3>
-        <p data-i18n="contact.fbFayezSub">مدير الصفحة والإعلام</p>
+        <p data-i18n="contact.fbFayezSub">وكيل المؤسسين</p>
       </div>
       <span class="contact-card__arrow" data-i18n="contact.linkLabel">زيارة</span>
     </a>
+    <div class="contact-card contact-card--static">
+      <svg><use href="#ico-phone"/></svg>
+      <div>
+        <h3 data-i18n="contact.phoneLabel">التواصل الرسمي</h3>
+        <p data-i18n="contact.phone">+20 120 106 8035</p>
+      </div>
+    </div>
+    <div class="contact-card contact-card--static">
+      <svg><use href="#ico-pin"/></svg>
+      <div>
+        <h3 data-i18n="contact.locationLabel">المقر</h3>
+        <p data-i18n="contact.location">الجيزة، القاهرة، مصر</p>
+      </div>
+    </div>
   </div>
   <p class="contact-note" data-i18n="contact.sub">للاستفسارات الرسمية...</p>
 </section>

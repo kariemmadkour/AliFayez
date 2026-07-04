@@ -45,7 +45,6 @@ em { font-style: normal; color: var(--gold); }
 [dir="rtl"] .section__title,
 [dir="rtl"] .loader__brand { font-family: var(--ff-ar); }
 [dir="rtl"] .marquee-track { animation-direction: reverse; }
-[dir="rtl"] .fayez-card__badge { right: auto; left: -1px; }
 [dir="rtl"] .value-card, [dir="rtl"] .init-card, [dir="rtl"] .contact-card { text-align: right; }
 
 /* ══════════════════════════════════════════
@@ -131,6 +130,7 @@ em { font-style: normal; color: var(--gold); }
     linear-gradient(180deg, var(--navy-3), var(--navy) 60%, var(--navy-3));
 }
 .hero__eyebrow { font-size: .8rem; letter-spacing: .25em; text-transform: uppercase; color: var(--gold); opacity: 0; }
+.hero__status { display: inline-block; font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold); border-radius: 999px; padding: .3rem .9rem; margin-bottom: 1.2rem; opacity: 0; }
 .hero__title { font-family: var(--ff-serif); font-size: clamp(3rem, 9vw, 6rem); font-weight: 700; line-height: 1; margin: 1rem 0; }
 .hero__title-line { display: block; opacity: 0; }
 .hero__sub { font-size: clamp(1rem, 2vw, 1.3rem); color: var(--grey-lt); max-width: 560px; margin: 0 auto 2rem; opacity: 0; }
@@ -140,9 +140,10 @@ em { font-style: normal; color: var(--gold); }
 .reveal-hero.visible { opacity: 1 !important; transform: translateY(0); }
 
 .hero__values { display: flex; gap: 2.5rem; margin-top: 4rem; flex-wrap: wrap; justify-content: center; opacity: 0; }
-.hero__value { display: flex; flex-direction: column; align-items: center; gap: .6rem; }
-.hero__value svg { width: 26px; height: 26px; color: var(--gold); }
-.hero__value span { font-size: .82rem; letter-spacing: .06em; color: var(--grey-lt); }
+.hero__value { display: flex; flex-direction: column; align-items: center; gap: .3rem; }
+.hero__value svg { width: 24px; height: 24px; color: var(--gold); margin-bottom: .3rem; }
+.hero__value strong { font-family: var(--ff-serif); font-size: 1.6rem; font-weight: 700; color: var(--white); }
+.hero__value span { font-size: .78rem; letter-spacing: .04em; color: var(--grey-lt); }
 
 /* ══════════════════════════════════════════
    MARQUEE
@@ -162,6 +163,7 @@ em { font-style: normal; color: var(--gold); }
 .section__eyebrow { font-size: .78rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: .8rem; display: block; }
 .section__title { font-family: var(--ff-serif); font-size: clamp(2rem, 5vw, 2.8rem); font-weight: 700; margin-bottom: 1rem; }
 .section__sub { color: var(--grey-lt); font-size: 1.02rem; }
+.section__quote { color: var(--gold-lt); font-size: .88rem; margin-top: 1rem; }
 
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease-out), transform .7s var(--ease-out); }
 .reveal.visible { opacity: 1; transform: translateY(0); }
@@ -182,36 +184,38 @@ em { font-style: normal; color: var(--gold); }
 /* ── Ali Fayez section ── */
 .fayez-card {
   max-width: 900px; margin: 0 auto; background: var(--navy-2);
-  border: 2px dashed var(--gold); border-radius: 20px; padding: 3rem;
+  border: 1px solid rgba(255,255,255,.08); border-radius: 20px; padding: 3rem;
   display: grid; grid-template-columns: auto 1fr; gap: 2.5rem; position: relative;
-}
-.fayez-card__badge {
-  position: absolute; top: -1px; right: -1px; background: var(--gold); color: var(--navy-3);
-  font-size: .68rem; font-weight: 700; letter-spacing: .05em; padding: .4rem .9rem;
-  border-radius: 0 18px 0 12px; text-transform: uppercase;
 }
 .fayez-card__avatar { width: 120px; height: 120px; border-radius: 50%; background: var(--navy); border: 2px solid var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--ff-serif); font-size: 2.2rem; color: var(--gold); flex-shrink: 0; }
 .fayez-card__role { color: var(--gold); font-size: .85rem; letter-spacing: .05em; margin-bottom: .3rem; display: block; }
 .fayez-card__name { font-family: var(--ff-serif); font-size: 2rem; font-weight: 700; margin-bottom: 1rem; }
-.fayez-card__bio p { color: var(--grey-lt); margin-bottom: .8rem; font-style: italic; }
+.fayez-card__bio p { color: var(--grey-lt); margin-bottom: .8rem; }
 .fayez-card__ach-title { font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin: 1.5rem 0 .6rem; }
 .fayez-card__ach { display: flex; flex-direction: column; gap: .5rem; }
-.fayez-card__ach li { color: var(--grey-lt); font-style: italic; padding-inline-start: 1.4rem; position: relative; }
+.fayez-card__ach li { color: var(--grey-lt); padding-inline-start: 1.4rem; position: relative; }
 .fayez-card__ach li::before { content: '—'; position: absolute; inset-inline-start: 0; color: var(--gold); }
 .fayez-card__note { grid-column: 1 / -1; margin-top: 1rem; padding-top: 1.2rem; border-top: 1px solid rgba(255,255,255,.1); font-size: .82rem; color: var(--grey); }
 
 /* ── Initiatives ── */
-.init-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; max-width: 1180px; margin: 0 auto; }
+.init-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.8rem; max-width: 1180px; margin: 0 auto 3.5rem; }
 .init-card { background: var(--navy-2); border: 1px solid rgba(255,255,255,.06); border-radius: 16px; padding: 2.2rem; transition: transform .25s ease, border-color .25s ease; }
 .init-card:hover { transform: translateY(-4px); border-color: var(--gold); }
 .init-card svg { width: 32px; height: 32px; color: var(--gold); margin-bottom: 1.2rem; }
-.init-card h3 { font-family: var(--ff-serif); font-size: 1.3rem; margin-bottom: .6rem; }
+.init-card h3 { font-family: var(--ff-serif); font-size: 1.3rem; margin-bottom: .3rem; }
 .init-card p { color: var(--grey-lt); font-size: .92rem; }
+.init-card__sub { display: block; font-size: .78rem; letter-spacing: .05em; color: var(--gold); margin-bottom: .8rem; }
+
+.benefits__title { text-align: center; font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
+.benefit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .9rem 2.5rem; max-width: 900px; margin: 0 auto; }
+.benefit-item { display: flex; align-items: flex-start; gap: .7rem; color: var(--grey-lt); font-size: .92rem; }
+.benefit-item svg { width: 18px; height: 18px; color: var(--gold); flex-shrink: 0; margin-top: .15rem; }
 
 /* ── Contact ── */
-.contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 800px; margin: 0 auto; }
+.contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; max-width: 900px; margin: 0 auto; }
 .contact-card { display: flex; align-items: center; gap: 1.2rem; background: var(--navy-2); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 1.6rem; transition: transform .25s ease, border-color .25s ease; }
 .contact-card:hover { transform: translateY(-4px); border-color: var(--gold); }
+.contact-card--static:hover { transform: none; border-color: rgba(255,255,255,.08); }
 .contact-card svg { width: 34px; height: 34px; color: var(--gold); flex-shrink: 0; }
 .contact-card h3 { font-size: 1.05rem; margin-bottom: .2rem; }
 .contact-card p { color: var(--grey-lt); font-size: .82rem; }
@@ -252,4 +256,5 @@ em { font-style: normal; color: var(--gold); }
 @media (max-width: 560px) {
   .value-grid { grid-template-columns: 1fr; }
   .hero__values { gap: 1.5rem; }
+  .benefit-grid { grid-template-columns: 1fr; }
 }
