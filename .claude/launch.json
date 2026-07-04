@@ -3,9 +3,9 @@
   "configurations": [
     {
       "name": "ali-fayez",
-      "runtimeExecutable": "python3",
-      "runtimeArgs": ["-m", "http.server", "${PORT}"],
-      "port": 4200,
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "-p", "${PORT}"],
+      "port": 4569,
       "autoPort": true
     }
   ]

@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "title": "Hezb El Nas — For All Egyptians"
+  },
+  "brand": {
+    "name": "Hezb El Nas",
+    "full": "HEZB EL NAS",
+    "slogan": "For All Egyptians",
+    "tagline": "A Voice for You, Not Against You"
+  },
+  "loader": {
+    "tagline": "Preparing your experience"
+  },
+  "nav": {
+    "party": "About the Party",
+    "fayez": "Ali Fayez",
+    "initiatives": "Initiatives",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "cta": "Follow Us"
+  },
+  "hero": {
+    "eyebrow": "For All Egyptians",
+    "status": "Under Establishment",
+    "title1": "Hezb",
+    "title2": "El Nas",
+    "sub": "A Voice for You, Not Against You",
+    "cta1": "Learn More",
+    "cta2": "Follow on Facebook",
+    "stat1Num": "500+",
+    "stat1Label": "Founding Members",
+    "stat2Num": "9.2K",
+    "stat2Label": "Facebook Followers",
+    "stat3Num": "9+",
+    "stat3Label": "Governorates & Growing"
+  },
+  "marquee": {
+    "text": "حزب الناس"
+  },
+  "party": {
+    "eyebrow": "Who We Are",
+    "title": "About",
+    "titleAccent": "the Party",
+    "sub": "A centrist reform party — currently under establishment — uniting Egyptians from every governorate and every walk of life.",
+    "p1": "On the day of its founding conference, Hezb El Nas held the first meeting of its founding body, bringing together more than 500 founding members and activists from governorates across Egypt — including Beheira, Fayoum, Beni Suef, Assiut, Alexandria, Dakahlia, Sohag, Giza, Cairo, and others.",
+    "p2": "The conference brought together media and press figures, doctors, lawyers, executives, university professors, young people, farmers, professionals, and women — a real reflection of Egyptian society, and living proof that Hezb El Nas is a party for all Egyptians.",
+    "values": [
+      { "title": "National Participation", "body": "A political home for every Egyptian, from every governorate and walk of life." },
+      { "title": "Rule of Law", "body": "Political work grounded in respect for the constitution and the law." },
+      { "title": "Competence & Transparency", "body": "Responsible leadership built on merit and open accountability." },
+      { "title": "Service to the Nation", "body": "Serious, continuous work to serve Egypt and its citizens." }
+    ]
+  },
+  "fayez": {
+    "eyebrow": "Deputy of the Founders",
+    "title": "Ali Fayez",
+    "titleAccent": "Al-Farjani",
+    "role": "Deputy of the Founders, Hezb El Nas",
+    "bio1": "Counselor Ali Fayez Al-Farjani is a lawyer before the Court of Appeal, a television and radio program host (on El Shams and El Mehwar channels), and a PhD researcher in Law, holding master's degrees in Media and in Political Communication.",
+    "bio2": "He also chairs the Ali Fayez Charitable Foundation and is affiliated with the Nasser Higher Military Academy. As Deputy of the Founders of Hezb El Nas, he represents the party's founding body and has led its official announcements, including its first founding conference and the upcoming Services Card initiative.",
+    "achTitle": "Highlights",
+    "achievements": [
+      "Lawyer before the Court of Appeal & PhD researcher in Law",
+      "TV & radio program host — El Shams and El Mehwar channels",
+      "Chairman, Ali Fayez Charitable Foundation",
+      "Deputy of the Founders — led Hezb El Nas's first founding conference"
+    ],
+    "note": "Biography sourced from Ali Fayez's official Facebook profile."
+  },
+  "initiatives": {
+    "eyebrow": "Official Initiative",
+    "title": "The Services Card",
+    "titleAccent": "System",
+    "sub": "A digital membership system announced by the party: each membership card carries a QR code granting access to a growing network of everyday service discounts — to be activated once the party's official founding is complete.",
+    "quote": "— As announced by Counselor Ali Fayez Al-Farjani, Deputy of the Founders.",
+    "tiers": [
+      { "title": "VIP Card", "sub": "Founding Members", "body": "100% access to the full services network." },
+      { "title": "B Card", "sub": "Participating Members", "body": "75% access to the services network." },
+      { "title": "C Card", "sub": "Affiliated Members", "body": "50% access to the services network." }
+    ],
+    "benefitsTitle": "What the Network Covers",
+    "benefits": [
+      "Private hospitals — consultations & operations",
+      "Labs & radiology centers",
+      "Contracted doctors across specialties",
+      "Restaurants, markets & hypermarkets",
+      "Clothing & essentials stores",
+      "Social & sports clubs",
+      "Resorts, trips & recreation",
+      "Student transportation support"
+    ]
+  },
+  "gallery": {
+    "eyebrow": "Moments & Events",
+    "title": "Events & Media",
+    "titleAccent": "Gallery",
+    "sub": "Documenting the founding moments, leadership, and visual identity of Hezb El Nas.",
+    "viewLabel": "View",
+    "closeLabel": "Close",
+    "prevLabel": "Previous",
+    "nextLabel": "Next",
+    "placeholderNote": "Photo coming soon"
+  },
+  "contact": {
+    "eyebrow": "Get in Touch",
+    "title": "Contact &",
+    "titleAccent": "Follow",
+    "sub": "For official inquiries, please reach out via our Facebook page.",
+    "fbParty": "Official Facebook Page",
+    "fbPartySub": "Hezb El Nas — updates & announcements",
+    "fbFayez": "Ali Fayez",
+    "fbFayezSub": "Deputy of the Founders",
+    "linkLabel": "Visit",
+    "phoneLabel": "Official Contact",
+    "phone": "+20 120 106 8035",
+    "locationLabel": "Based In",
+    "location": "Giza, Cairo, Egypt"
+  },
+  "footer": {
+    "tagline": "A Voice for You, Not Against You.",
+    "col1": "Explore",
+    "col2": "Follow",
+    "copy": "© 2026 Hezb El Nas. All rights reserved.",
+    "built": "Content sourced from the party's official Facebook page."
+  }
+}
