@@ -28,7 +28,7 @@ export default function PartySection() {
           <span className="mb-3 block text-sm tracking-[0.22em] text-[#c9a827] uppercase">
             {t("eyebrow")}
           </span>
-          <h2 className="mb-4 font-[family-name:var(--font-cormorant)] text-4xl font-bold text-white sm:text-5xl">
+          <h2 className="mb-4 heading-serif text-4xl font-bold text-white sm:text-5xl">
             {t("title")} <span className="text-[#c9a827]">{t("titleAccent")}</span>
           </h2>
           <p className="mb-4 text-[#b9bdc9]">{t("p1")}</p>
@@ -45,7 +45,7 @@ export default function PartySection() {
               className="rounded-2xl border border-white/[0.06] bg-[#142660] p-7 text-center transition-all hover:-translate-y-1 hover:border-[#c9a827]"
             >
               <Icon size={28} className="mx-auto mb-4 text-[#c9a827]" />
-              <h3 className="mb-2 font-[family-name:var(--font-cormorant)] text-xl font-bold text-white">
+              <h3 className="mb-2 heading-serif text-xl font-bold text-white">
                 {v.title}
               </h3>
               <p className="text-sm text-[#b9bdc9]">{v.body}</p>

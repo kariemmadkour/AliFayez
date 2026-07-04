@@ -44,7 +44,7 @@ export default function Navbar() {
       <Link href={`/${locale}`} className="flex items-center gap-2.5" aria-label="Hezb El Nas">
         <BrandMark className="h-10 w-10 shrink-0" />
         <span className="flex flex-col leading-tight">
-          <span className="font-[family-name:var(--font-cormorant)] text-lg font-bold text-white">
+          <span className="heading-serif text-lg font-bold text-white">
             {isAr ? "حزب الناس" : "Hezb El Nas"}
           </span>
           <span className="text-[0.62rem] tracking-wider text-[#c9a827]">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter, Tajawal } from "next/font/google";
+import { Cormorant_Garamond, Inter, Tajawal, Aref_Ruqaa } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -22,6 +22,12 @@ const tajawal = Tajawal({
   subsets: ["arabic"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-tajawal",
+});
+
+const arefRuqaa = Aref_Ruqaa({
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+  variable: "--font-aref-ruqaa",
 });
 
 export const metadata: Metadata = {
@@ -47,7 +53,7 @@ export default async function LocaleLayout({
     <html
       lang={locale}
       dir={dir}
-      className={`${cormorant.variable} ${inter.variable} ${tajawal.variable}`}
+      className={`${cormorant.variable} ${inter.variable} ${tajawal.variable} ${arefRuqaa.variable}`}
     >
       <body
         className="min-h-screen"

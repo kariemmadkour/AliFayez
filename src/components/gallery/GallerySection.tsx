@@ -19,7 +19,7 @@ export default function GallerySection() {
         <span className="mb-3 block text-sm tracking-[0.22em] text-[#c9a827] uppercase">
           {t("eyebrow")}
         </span>
-        <h2 className="mb-4 font-[family-name:var(--font-cormorant)] text-4xl font-bold text-white sm:text-5xl">
+        <h2 className="mb-4 heading-serif text-4xl font-bold text-white sm:text-5xl">
           {t("title")} <span className="text-[#c9a827]">{t("titleAccent")}</span>
         </h2>
         <p className="text-[#b9bdc9]">{t("sub")}</p>

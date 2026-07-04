@@ -12,7 +12,7 @@ export default function MarqueeStrip() {
       <div className="animate-marquee flex w-max gap-8 whitespace-nowrap">
         {[...track, ...track].map((text, i) => (
           <span key={i} className="flex items-center gap-8">
-            <span className="font-[family-name:var(--font-cormorant)] text-lg tracking-wide text-[#e0c565]">
+            <span className="heading-serif text-lg tracking-wide text-[#e0c565]">
               {text}
             </span>
             <i className="text-[#c9a827] opacity-50">•</i>

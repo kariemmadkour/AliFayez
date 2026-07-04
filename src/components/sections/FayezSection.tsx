@@ -13,18 +13,18 @@ export default function FayezSection() {
         <span className="mb-3 block text-sm tracking-[0.22em] text-[#c9a827] uppercase">
           {t("eyebrow")}
         </span>
-        <h2 className="font-[family-name:var(--font-cormorant)] text-4xl font-bold text-white sm:text-5xl">
+        <h2 className="heading-serif text-4xl font-bold text-white sm:text-5xl">
           {t("title")} <span className="text-[#c9a827]">{t("titleAccent")}</span>
         </h2>
       </Reveal>
 
       <Reveal className="mx-auto grid max-w-4xl gap-10 rounded-3xl border border-white/[0.08] bg-[#0d1b4c] p-8 sm:p-12 md:grid-cols-[auto_1fr]">
-        <div className="mx-auto flex h-30 w-30 shrink-0 items-center justify-center rounded-full border-2 border-[#c9a827] bg-[#0a1338] font-[family-name:var(--font-cormorant)] text-4xl text-[#c9a827]">
+        <div className="mx-auto flex h-30 w-30 shrink-0 items-center justify-center rounded-full border-2 border-[#c9a827] bg-[#0a1338] heading-serif text-4xl text-[#c9a827]">
           AF
         </div>
         <div>
           <span className="mb-1 block text-sm tracking-wide text-[#c9a827]">{t("role")}</span>
-          <h3 className="mb-4 font-[family-name:var(--font-cormorant)] text-3xl font-bold text-white">
+          <h3 className="mb-4 heading-serif text-3xl font-bold text-white">
             {t("title")} <span className="text-[#c9a827]">{t("titleAccent")}</span>
           </h3>
           <p className="mb-3 text-[#b9bdc9]">{t("bio1")}</p>

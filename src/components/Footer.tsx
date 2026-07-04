@@ -22,7 +22,7 @@ export default function Footer() {
         <div>
           <div className="mb-3 flex items-center gap-2.5">
             <BrandMark className="h-9 w-9" />
-            <span className="font-[family-name:var(--font-cormorant)] text-lg font-bold text-white">
+            <span className="heading-serif text-lg font-bold text-white">
               {locale === "ar" ? "حزب الناس" : "Hezb El Nas"}
             </span>
           </div>

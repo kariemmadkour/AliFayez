@@ -31,6 +31,16 @@ html {
   font-family: var(--font-tajawal), system-ui, sans-serif;
 }
 
+.heading-serif {
+  font-family: var(--font-cormorant), Georgia, serif;
+  line-height: 1.15;
+}
+[dir="rtl"] .heading-serif {
+  font-family: var(--font-aref-ruqaa), var(--font-tajawal), sans-serif;
+  line-height: 1.6;
+  font-weight: 700;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }

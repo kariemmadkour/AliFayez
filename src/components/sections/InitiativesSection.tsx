@@ -18,7 +18,7 @@ export default function InitiativesSection() {
         <span className="mb-3 block text-sm tracking-[0.22em] text-[#c9a827] uppercase">
           {t("eyebrow")}
         </span>
-        <h2 className="mb-4 font-[family-name:var(--font-cormorant)] text-4xl font-bold text-white sm:text-5xl">
+        <h2 className="mb-4 heading-serif text-4xl font-bold text-white sm:text-5xl">
           {t("title")} <span className="text-[#c9a827]">{t("titleAccent")}</span>
         </h2>
         <p className="mb-3 text-[#b9bdc9]">{t("sub")}</p>
@@ -34,7 +34,7 @@ export default function InitiativesSection() {
               className="rounded-2xl border border-white/[0.06] bg-[#142660] p-9 transition-all hover:-translate-y-1 hover:border-[#c9a827]"
             >
               <Icon size={30} className="mb-4 text-[#c9a827]" />
-              <h3 className="font-[family-name:var(--font-cormorant)] text-2xl font-bold text-white">
+              <h3 className="heading-serif text-2xl font-bold text-white">
                 {tier.title}
               </h3>
               <span className="mb-3 block text-xs tracking-wide text-[#c9a827]">{tier.sub}</span>
