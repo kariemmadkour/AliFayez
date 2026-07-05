@@ -49,21 +49,31 @@ export default function ContactSection() {
           <span className="ms-auto text-sm font-semibold text-[#c9a827]">{t("linkLabel")}</span>
         </a>
 
-        <div className="flex items-center gap-4 rounded-2xl border border-white/[0.08] bg-[#0d1b4c] p-6">
+        <a
+          href="tel:+201201068035"
+          className="flex items-center gap-4 rounded-2xl border border-white/[0.08] bg-[#0d1b4c] p-6 transition-all hover:-translate-y-1 hover:border-[#c9a827]"
+        >
           <Phone className="h-8 w-8 shrink-0 text-[#c9a827]" />
           <div>
             <h3 className="font-semibold text-white">{t("phoneLabel")}</h3>
-            <p className="text-sm text-[#b9bdc9]">{t("phone")}</p>
+            <p dir="ltr" className="text-end text-sm text-[#b9bdc9]">
+              {t("phone")}
+            </p>
           </div>
-        </div>
+        </a>
 
-        <div className="flex items-center gap-4 rounded-2xl border border-white/[0.08] bg-[#0d1b4c] p-6">
+        <a
+          href="https://www.google.com/maps?q=29.983,30.966999"
+          target="_blank"
+          rel="noopener"
+          className="flex items-center gap-4 rounded-2xl border border-white/[0.08] bg-[#0d1b4c] p-6 transition-all hover:-translate-y-1 hover:border-[#c9a827]"
+        >
           <MapPin className="h-8 w-8 shrink-0 text-[#c9a827]" />
           <div>
             <h3 className="font-semibold text-white">{t("locationLabel")}</h3>
             <p className="text-sm text-[#b9bdc9]">{t("location")}</p>
           </div>
-        </div>
+        </a>
       </Reveal>
 
       <p className="mx-auto mt-8 max-w-xl text-center text-sm text-[#8a8f9e]">{t("sub")}</p>

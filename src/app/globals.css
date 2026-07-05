@@ -41,6 +41,16 @@ html {
   font-weight: 700;
 }
 
+/* Wide letter-spacing + uppercase (used for small eyebrow/label text) breaks
+   Arabic letter joining, producing a "cut apart" look. Neutralize both under RTL. */
+[dir="rtl"] .uppercase {
+  text-transform: none;
+}
+[dir="rtl"] .tracking-widest,
+[dir="rtl"] [class*="tracking-["] {
+  letter-spacing: normal;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
