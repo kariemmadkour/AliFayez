@@ -1,6 +1,7 @@
 "use client";
 
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 import Reveal from "@/components/Reveal";
 
 export default function FayezSection() {
@@ -19,8 +20,8 @@ export default function FayezSection() {
       </Reveal>
 
       <Reveal className="mx-auto grid max-w-4xl gap-10 rounded-3xl border border-white/[0.08] bg-[#0d1b4c] p-8 sm:p-12 md:grid-cols-[auto_1fr]">
-        <div className="mx-auto flex h-30 w-30 shrink-0 items-center justify-center rounded-full border-2 border-[#c9a827] bg-[#0a1338] heading-serif text-4xl text-[#c9a827]">
-          AF
+        <div className="relative mx-auto h-30 w-30 shrink-0 overflow-hidden rounded-full border-2 border-[#c9a827]">
+          <Image src="/images/ali-fayez.png" alt={t("title")} fill className="object-cover" />
         </div>
         <div>
           <span className="mb-1 block text-sm tracking-wide text-[#c9a827]">{t("role")}</span>
