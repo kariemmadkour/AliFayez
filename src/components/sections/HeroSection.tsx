@@ -13,7 +13,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <header className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-6 pt-36 pb-20 text-center">
+    <header className="relative flex min-h-screen flex-col items-start justify-center overflow-hidden px-6 pt-36 pb-20 text-start sm:ps-16">
       <video
         autoPlay
         muted
@@ -31,7 +31,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative flex flex-col items-center">
+      <div className="relative flex flex-col items-start">
         <p className="fade-in-up text-sm tracking-[0.25em] text-[#c9a827] uppercase" style={{ animationDelay: "0.1s" }}>
           {t("eyebrow")}
         </p>
@@ -56,7 +56,7 @@ export default function HeroSection() {
           {t("sub")}
         </p>
 
-        <div className="fade-in-up mb-16 flex flex-wrap justify-center gap-4" style={{ animationDelay: "0.7s" }}>
+        <div className="fade-in-up mb-16 flex flex-wrap justify-start gap-4" style={{ animationDelay: "0.7s" }}>
           <a
             href="#party"
             className="inline-flex items-center gap-2 rounded-full bg-[#c9a827] px-8 py-3.5 text-sm font-semibold text-[#0a1338] transition-transform hover:-translate-y-0.5 hover:bg-[#e0c565]"
@@ -74,7 +74,7 @@ export default function HeroSection() {
           </a>
         </div>
 
-        <div className="fade-in-up flex flex-wrap justify-center gap-10" style={{ animationDelay: "0.9s" }}>
+        <div className="fade-in-up flex flex-wrap justify-start gap-10" style={{ animationDelay: "0.9s" }}>
           {stats.map(({ icon: Icon, num, label }) => (
             <div key={label} className="flex flex-col items-center gap-1">
               <Icon size={22} className="mb-1 text-[#c9a827]" />
